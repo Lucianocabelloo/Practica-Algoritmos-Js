@@ -100,28 +100,28 @@ document.write("<p> Ejercicio 5: </p>")
 
 // Dificultad:  🟢🟡 
 // 9.- Escribe un programa que pida una frase y escriba las vocales que aparecen
-let frase = prompt("Ingrese una frase");
-frase = frase.toLowerCase();
+// let frase = prompt("Ingrese una frase");
+// frase = frase.toLowerCase();
 
-let vocales = "";
+// let vocales = "";
 
-if (frase.includes("a")) {
-    vocales += "a";
-}
-if (frase.includes("e")) {
-    vocales += "e";
-}
-if (frase.includes("i")) {
-    vocales += "i";
-}
-if (frase.includes("o")) {
-    vocales += "o";
-}
-if (frase.includes("u")) {
-    vocales += "u";
-}
+// if (frase.includes("a")) {
+//     vocales += "a";
+// }
+// if (frase.includes("e")) {
+//     vocales += "e";
+// }
+// if (frase.includes("i")) {
+//     vocales += "i";
+// }
+// if (frase.includes("o")) {
+//     vocales += "o";
+// }
+// if (frase.includes("u")) {
+//     vocales += "u";
+// }
 
-document.write("Las vocales que aparecen en la frase son: " + vocales);
+// document.write("Las vocales que aparecen en la frase son: " + vocales);
 // Nota: Tener en cuenta la función length y substring o charAt (developer mozilla)
 // Ejemplo:
 
@@ -138,7 +138,22 @@ document.write("Las vocales que aparecen en la frase son: " + vocales);
 // Dificultad:  🟢🟡
 // 10.- Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro)
 // Ejemplo: 
-
+let numeroDivisible = parseInt(prompt("Escriba un numero para comprobar si es divisible en 2, 3, 5 o 7"))
+if (numeroDivisible % 2 === 0){
+    document.write("El "+numeroDivisible+" es divisible entre 2")
+}
+else if(numeroDivisible % 3 === 0){
+    document.write("<br>El "+numeroDivisible+" es divisible entre 3")
+}
+else if(numeroDivisible % 5 === 0){
+    document.write("<br>El "+numeroDivisible+" es divisible entre 5")
+}
+else if(numeroDivisible % 7 === 0){
+    document.write("<br>El "+numeroDivisible+" es divisible entre 7")
+}
+else {
+    document.write("<br>No es divisible por ninguno de los numeros anteriores")
+}
 // input: 20
 
 
