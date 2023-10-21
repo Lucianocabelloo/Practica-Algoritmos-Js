@@ -82,13 +82,13 @@ document.write("<p> Ejercicio 5: </p>")
 // Dificultad:  🟢
 // 8.- Escribe un programa que pida un número y diga si es divisible por 2
 // Ejemplo: 
-let numero8 = parseInt(prompt("Por favor, ingresa el numero para saber si es par"));
-document.write("<p> Ejercicio 8: </p>")
-if ( (numero8 % 2) == 0 ){
-    document.write("El número " + numero8 + " es divisible entre 2");
-} else{
-    document.write("El número " + numero8 + " no es divisible entre 2");
-}
+// let numero8 = parseInt(prompt("Por favor, ingresa el numero para saber si es par"));
+// document.write("<p> Ejercicio 8: </p>")
+// if ( (numero8 % 2) == 0 ){
+//     document.write("El número " + numero8 + " es divisible entre 2");
+// } else{
+//     document.write("El número " + numero8 + " no es divisible entre 2");
+// }
 
 
 // input: 10
@@ -100,8 +100,28 @@ if ( (numero8 % 2) == 0 ){
 
 // Dificultad:  🟢🟡 
 // 9.- Escribe un programa que pida una frase y escriba las vocales que aparecen
-let frase = prompt("Ingrese una frase")
+let frase = prompt("Ingrese una frase");
+frase = frase.toLowerCase();
 
+let vocales = "";
+
+if (frase.includes("a")) {
+    vocales += "a";
+}
+if (frase.includes("e")) {
+    vocales += "e";
+}
+if (frase.includes("i")) {
+    vocales += "i";
+}
+if (frase.includes("o")) {
+    vocales += "o";
+}
+if (frase.includes("u")) {
+    vocales += "u";
+}
+
+document.write("Las vocales que aparecen en la frase son: " + vocales);
 // Nota: Tener en cuenta la función length y substring o charAt (developer mozilla)
 // Ejemplo:
 
