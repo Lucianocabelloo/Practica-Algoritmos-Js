@@ -15,15 +15,12 @@ document.write("<p> Ejercicio 2: </p>" + "Hello World ");
 // 3.- Escribe un programa de una sola línea que escriba en la pantalla el resultado de sumar 3 + 5.
 document.write("<p> Ejercicio 3: </p>")
 document.write(3+5)
-// Dificultad:  🟢
+
 
 // 4.- Escribe un programa de dos líneas que pida el nombre del usuario con un prompt y escriba un texto que diga «Hola nombreUsuario»
  let nombreUsuario = prompt("Ingrese nombre de usuario")
  document.write("<p> Ejercicio 4: </p>" + "Hola" + " " + nombreUsuario)
-// Ejemplo: 
 
-// input: Coder 
-// Output: Hola Coder
 
 // Dificultad:  🟢
 // 5.- Escribe un programa de tres líneas que pida un número, pida otro número y escriba el resultado de sumar estos dos números.
@@ -33,9 +30,6 @@ document.write("<p> Ejercicio 5: </p>")
  document.write( parseInt(numero1) +  parseInt( numero2))
 
 
-
-// Nota: Tener en cuenta la siguiente función: parseInt
-// https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/parseInt
 // Dificultad:  🟢
 // 6.- Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.
 
@@ -50,14 +44,9 @@ document.write("<p> Ejercicio 5: </p>")
      document.write("Los números son iguales.");
  }
 
-// Ejemplo: 
-
-// input: 15 , 3
 
 
-// Output: El 15 es el número más grande
 
-// Dificultad:  🟢
 // 7.- Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.
 // Ejemplo: 
 
@@ -76,14 +65,11 @@ document.write("<p> Ejercicio 5: </p>")
 
 
 
-// input: 15 , 3, 9
 
-
-// Output: El 15 es el número más grande
 
 // Dificultad:  🟢
 // 8.- Escribe un programa que pida un número y diga si es divisible por 2
-// Ejemplo: 
+
 
  let numero8 = parseInt(prompt("Por favor, ingresa el numero para saber si es par"));
  document.write("<p> Ejercicio 8: </p>")
@@ -93,11 +79,6 @@ document.write("<p> Ejercicio 5: </p>")
      document.write("El número " + numero8 + " no es divisible entre 2");
 }
 
-
-// input: 10
-// input: 15
-// Output: El 10 es divisible por 2.
-// Output: El 15 no es divisible por 2.
 
 
 
@@ -127,14 +108,6 @@ document.write("<p> Ejercicio 5: </p>")
  }
 
  document.write("Las vocales que aparecen en la frase son: " + vocales);
-// Nota: Tener en cuenta la función length y substring o charAt (developer mozilla)
-// Ejemplo:
-
-
-
-// input: Hola mundo
-// Output: oauo
-
 
 
 
@@ -164,7 +137,7 @@ document.write("<p> Ejercicio 5: </p>")
  input: 20
 
 
-// Output: El 20 es divisible por 2.
+
 
 
 
@@ -190,14 +163,6 @@ else {
     document.write("<br>No es divisible por ninguno de los numeros anteriores")
 }
 
-// input: 20
-// input: 210
-
-
-
-
-// Output: El 20 es divisible por 2 y por 5.
-// Output: El 210 es divisible por 2, por 3, por 5 y por 7.
 
 
 
