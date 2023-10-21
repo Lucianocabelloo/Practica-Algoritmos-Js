@@ -138,22 +138,22 @@ document.write("<p> Ejercicio 5: </p>")
 // Dificultad:  🟢🟡
 // 10.- Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro)
 // Ejemplo: 
-let numeroDivisible = parseInt(prompt("Escriba un numero para comprobar si es divisible en 2, 3, 5 o 7"))
-if (numeroDivisible % 2 === 0){
-    document.write("El "+numeroDivisible+" es divisible entre 2")
-}
-else if(numeroDivisible % 3 === 0){
-    document.write("<br>El "+numeroDivisible+" es divisible entre 3")
-}
-else if(numeroDivisible % 5 === 0){
-    document.write("<br>El "+numeroDivisible+" es divisible entre 5")
-}
-else if(numeroDivisible % 7 === 0){
-    document.write("<br>El "+numeroDivisible+" es divisible entre 7")
-}
-else {
-    document.write("<br>No es divisible por ninguno de los numeros anteriores")
-}
+// let numeroDivisible = parseInt(prompt("Escriba un numero para comprobar si es divisible en 2, 3, 5 o 7"))
+// if (numeroDivisible % 2 === 0){
+//     document.write("El "+numeroDivisible+" es divisible entre 2")
+// }
+// else if(numeroDivisible % 3 === 0){
+//     document.write("<br>El "+numeroDivisible+" es divisible entre 3")
+// }
+// else if(numeroDivisible % 5 === 0){
+//     document.write("<br>El "+numeroDivisible+" es divisible entre 5")
+// }
+// else if(numeroDivisible % 7 === 0){
+//     document.write("<br>El "+numeroDivisible+" es divisible entre 7")
+// }
+// else {
+//     document.write("<br>No es divisible por ninguno de los numeros anteriores")
+// }
 // input: 20
 
 
@@ -164,7 +164,22 @@ else {
 // Dificultad:  🟢🟡
 // 11.- Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible (hay que decir todos por los que es divisible)
 // Ejemplo: 
-
+let numeroDivisible2 = parseInt(prompt("Escriba un numero para comprobar si es divisible en 2, 3, 5 o 7"))
+if (numeroDivisible2 % 2 === 0){
+    document.write("El "+numeroDivisible2+" es divisible entre 2")
+}
+ if(numeroDivisible2 % 3 === 0){
+    document.write("<br>El "+numeroDivisible2+" es divisible entre 3")
+}
+ if(numeroDivisible2 % 5 === 0){
+    document.write("<br>El "+numeroDivisible2+" es divisible entre 5")
+}
+ if(numeroDivisible2 % 7 === 0){
+    document.write("<br>El "+numeroDivisible2+" es divisible entre 7")
+}
+else {
+    document.write("<br>No es divisible por ninguno de los numeros anteriores")
+}
 // input: 20
 // input: 210
 
