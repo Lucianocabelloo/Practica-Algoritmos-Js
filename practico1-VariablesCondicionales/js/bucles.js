@@ -13,53 +13,10 @@
 
 // Dificultad:  🟢🟡
 
-// 3- Realiza un script que pida cadenas de texto  hasta que se pulse “cancelar”. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión -.
 
-// Nota: usar confirm() https://www.w3schools.com/jsref/met_win_confirm.asp
-
-// CORREGIR
-
-let continuarBucle = true
-
-while (true) {
-    let cadenaDeTexto = prompt("Ingresa una cadena de texto");
-
-    if (cadenaDeTexto) {
-        document.write(`${cadenaDeTexto}-`);
-    } else {
-        if (confirm("Quieres continuar el bucle?") === true){
-            continue;
-        }
-        else{
-            document.write("<br>Fin del bucle.");
-            break
-        }
-    }
-    
-}
 
 // Dificultad:  🟢🟡
-// 4- Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo números. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.
-// let sumaTotal = 0;
 
-// while(true){
-//     let finalizarBucle = confirm("Desea continuar con el bucle?")
-
-//     if(finalizarBucle === false){
-//         break
-//     }
-
-//     let ingresarNumero = parseInt(prompt("Ingresa un numero"))
-
-//     if (!isNaN(ingresarNumero)){
-//         sumaTotal += ingresarNumero
-//     }
-//     else{
-//         alert("Numeros no validos, intente nuevamente.")
-//     }
-// }
-
-// document.write("La suma total de los números ingresados es: " + sumaTotal);
 
 // Dificultad:  🟢🟡🔴
 // 5- Realizar una página con un script que calcule el valor de la letra de un número de DNI (Documento nacional de identidad).
