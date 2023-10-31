@@ -92,13 +92,11 @@
 // Dificultad:  🟢🟡
 
 // Dificultad:  🟢🟡
-// 16- Realiza un script que pida una cadena de texto y la devuelva al revés. Es decir, si tecleo “hola que tal” deberá mostrar “lat euq aloh”.
 
-    // let textoInvertido = solicitarTexto.split("").reverse().join("")
-    // document.write(`<p>Tu texto invertido sera: ${textoInvertido}</p>`)
 
 // Dificultad:  🟢
 // 17- Realiza un script que muestre la posición de la primera vocal de un texto introducido por teclado.
+let solicitarTexto = prompt("Ingrese un texto para mostrar su primera vocal")
 // let vocales = "aeiou"
 // let primeraVocal = ""
 // let textoMinuscula = solicitarTexto.toLocaleLowerCase()
