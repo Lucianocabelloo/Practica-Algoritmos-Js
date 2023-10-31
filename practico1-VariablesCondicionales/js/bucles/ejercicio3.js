@@ -4,8 +4,6 @@
 
 // CORREGIR
 
-let continuarBucle = true
-
 while (true) {
     let cadenaDeTexto = prompt("Ingresa una cadena de texto");
 
