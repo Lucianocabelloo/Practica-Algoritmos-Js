@@ -33,17 +33,7 @@
 // Dificultad:  🟢
 // 4- Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una cadena de texto que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.
 
-function numeroParoImpar(numero) {
-    
-    if(numero % 2 === 0){
-        return "El número es par";
-    }
-    else{
-        return "El número es impar";
-        }
-}
 
-document.write(`<p> ${numeroParoImpar(23)} </p>`)
 
 // Dificultad:  🟢🟡
 // 5- Definir una función que muestre información sobre una cadena de texto que se le pasa como argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.
