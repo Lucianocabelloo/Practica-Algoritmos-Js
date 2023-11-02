@@ -15,6 +15,11 @@ for (let indiceDeAparicion = 0; indiceDeAparicion < 50; indiceDeAparicion++) {
 
     apariciones[sumaNumerosRandom]++; 
 }
+document.write('<table>');
+document.write('<tr><th>Número</th><th>Apariciones</th></tr>');
+
 for (let i = 2; i <= 12; i++) {
-    document.write(`<p>El número ${i} se repitió ${apariciones[i]} veces</p>`);
+    document.write(`<tr><td>${i}</td><td>${apariciones[i]}</td></tr>`);
 }
+
+document.write('</table>');
