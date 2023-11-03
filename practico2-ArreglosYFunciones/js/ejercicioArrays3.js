@@ -5,6 +5,7 @@ const apariciones = [];
 
 for (let i = 0; i <= 12; i++) {
     apariciones.push(0);
+
 }
 
 for (let indiceDeAparicion = 0; indiceDeAparicion < 50; indiceDeAparicion++) {
@@ -15,10 +16,12 @@ for (let indiceDeAparicion = 0; indiceDeAparicion < 50; indiceDeAparicion++) {
     apariciones[sumaNumerosRandom]++; 
 }
 document.write('<table>');
-document.write('<tr><th>Número</th><th>Apariciones</th></tr>');
+document.write('<thead> <tr> <th> Número </th> <th> Apariciones </th> </tr> </thead>');
+document.write('<tbody>');
 
 for (let i = 2; i <= 12; i++) {
     document.write(`<tr><td>${i}</td><td>${apariciones[i]}</td></tr>`);
 }
 
+document.write('</tbody>');
 document.write('</table>');
