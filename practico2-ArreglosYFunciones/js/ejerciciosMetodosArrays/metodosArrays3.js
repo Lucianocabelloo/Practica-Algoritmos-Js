@@ -4,17 +4,30 @@ const nombresLibros = ['El señor de los anillos', 'Cien años de soledad', '198
 const disponibilidadLibros = [true, false, true, true, false];
 
 function mostrarLibros() {
-    document.write(`<ul><h3> Los libros disponibles son </h3>`)
+    document.write(`<ul><h3> Todos los libros </h3>`);
 
-    
     nombresLibros.forEach(book => {
-        document.write(`<li> ${book} </li>`)
-    })
+        document.write(`<li>${book}</li>`);
+    });
 
-    document.write(`<ul>`)
+    document.write(`</ul>`);
 }
 
-mostrarLibros()
+mostrarLibros();
+
+function mostrarLibrosDisponibles() {
+    document.write(`<ul><h3> Los libros disponibles son </h3>`);
+
+    nombresLibros.forEach((book, index) => {
+        if (disponibilidadLibros[index] === true) {
+            document.write(`<li>${book}</li>`);
+        }
+    });
+
+    document.write(`</ul>`);
+}
+
+mostrarLibrosDisponibles();
 
 function buscarLibros(nombreLibro) {
     const libroEncontrado = nombresLibros.find(libro => libro.toLowerCase().includes(nombreLibro.toLowerCase()));
@@ -25,14 +38,13 @@ function buscarLibros(nombreLibro) {
         if (disponibilidadLibros[indiceLibro]) {
             document.write(`<h3>${libroEncontrado} está disponible para préstamo</h3>`);
         } else {
-            document.write(`<h2>${libroEncontrado} no está disponible actualmente</h2>`);
+            document.write(`<h3>${libroEncontrado} no está disponible actualmente</h3>`);
         }
     } else {
-        document.write(`<h2>El libro "${nombreLibro}" no se encuentra en el catálogo</h2>`);
+        document.write(`<h3>El libro "${nombreLibro}" no se encuentra en el catálogo</h3>`);
     }
 }
 
-const solicitarLibro = prompt("Ingresa el nombre de un libro")
+const solicitarLibro = prompt("Ingresa el nombre de un libro");
 
 buscarLibros(solicitarLibro);
-
