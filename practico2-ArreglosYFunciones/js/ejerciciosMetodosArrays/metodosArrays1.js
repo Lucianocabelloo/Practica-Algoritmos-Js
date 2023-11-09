@@ -11,7 +11,7 @@ const productosEnStock = [
 const preciosProductos = [15.99, 29.99, 49.99, 9.99, 12.5, "Sin Stock"];
 console.log(productosEnStock);
 
-/* Funcion Añadir Producto */
+
 
 function agregarProducto(productoAñadido, precioProductoAñadido) {
   if (productoAñadido !== undefined && precioProductoAñadido !== undefined) {
@@ -25,7 +25,7 @@ function agregarProducto(productoAñadido, precioProductoAñadido) {
   }
 }
 
-/* Funcion Eliminar Producto */
+
 
 function eliminarProducto() {
   const indicesProductosSinStock = [];
@@ -51,7 +51,8 @@ for (let i = 0; i < productosEnStock.length; i++) {
   );
 }
 document.write("</ul>");
-/* Llamada para Añadir Producto */
+
+
 agregarProducto("Guantes", 5.99);
 
 
@@ -64,7 +65,7 @@ for (let i = 0; i < productosEnStock.length; i++) {
 }
 document.write("</ul>");
 
-/* Llamada para elinminar Producto */
+
 eliminarProducto();
 
 document.write("<ul><h2> Listado de productos sin stock eliminado</h2>");
@@ -76,7 +77,7 @@ for (let i = 0; i < productosEnStock.length; i++) {
 }
 document.write("</ul>");
 
-/* Funcion Sumar precios del stock Producto */
+
 
 function calcularValorTotal() {
     const valorInicial = 0
