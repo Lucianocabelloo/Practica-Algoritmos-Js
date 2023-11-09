@@ -36,7 +36,7 @@ document.write("</ul>");
 
 console.log(promedioFinal);
 function aprobadosODesaprobados() {
-  document.write(`<ul> Listado de alumnos`);
+  document.write(`<ul><h2> Listado de alumnos</h2>`);
   for (let i = 0; i < nombresEstudiantes.length; i++) {
     const promedio = promedioFinal[i];
 

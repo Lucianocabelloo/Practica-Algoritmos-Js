@@ -26,6 +26,6 @@ let productos = [
   const todosLosProtectoresSolares = productos.filter(products => products.includes("Protector"))
 console.log(todosLosProtectoresSolares)
 
-const buscarProducto2 = productos.find(products => products.includes("Hidratante"))
+const buscarProducto2 = productos.find(products => products.includes("Hidratante")) 
 
 document.write(`<p>El producto buscado ${buscarProducto2 !== undefined ? buscarProducto2 : "No se encontro el producto buscado"}`)
