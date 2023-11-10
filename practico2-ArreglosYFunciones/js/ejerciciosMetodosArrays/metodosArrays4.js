@@ -2,6 +2,7 @@
 
 const nombresProyectos = ['Proyecto A', 'Proyecto B', 'Proyecto C', 'Proyecto D', 'Proyecto E'];
 const estadosProyectos = ['En Progreso', 'Completado', 'En Espera', 'En Progreso', 'Completado'];
+const encargadosProyectos = []
 
 function mostrarProyectos() {
     document.write(`<ul><h3> Los proyectos disponibles son </h3>`)
@@ -48,6 +49,25 @@ function agregarProyecto(proyectoAñadido, estadoDeProyecto) {
     document.write(`Se cambiara el estado de ${nombreDeProyecto} a ${nuevoEstado}`);
 }
 
+console.log(estadosProyectos)
     
   modificarEstadoDeProyecto("Proyecto C", "Completado")
   mostrarProyectos();
+
+  function agregarEncargado(nombreProyecto, encargadoNombre) {
+    let index = nombresProyectos.indexOf(nombreProyecto);
+
+    if (index !== -1) {
+        encargadosProyectos[index] = encargadoNombre;
+        document.write(`<p>${encargadoNombre} se ha asignado como encargado del proyecto ${nombreProyecto}</p>`);
+    } else {
+        document.write('<p>No se encontró el proyecto para asignar un encargado</p>');
+    }
+}
+
+agregarEncargado('Proyecto C', 'Nombre del Encargado');
+agregarEncargado('Proyecto X', 'Juan domingo');
+agregarEncargado('Proyecto A', 'Juan Peron');
+agregarEncargado('Proyecto KJ', 'Juan Peron');
+
+console.log(encargadosProyectos, estadosProyectos, nombresProyectos)
