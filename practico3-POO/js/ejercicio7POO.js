@@ -28,7 +28,7 @@ class Agenda {
         this.tamanoMaximo = tamano;
     }
 
-    anadirContacto(contacto) {
+    añadirContacto(contacto) {
         if (this.agendaLlena()) {
             console.log('La agenda está llena. No se puede agregar más contactos.');
         } else {
@@ -88,7 +88,7 @@ function mostrarMenu() {
     console.log('0. Salir');
 }
 
-function main() {
+function ejecutarAgenda() {
     const agenda = new Agenda();
 
     let opcion;
@@ -100,7 +100,7 @@ function main() {
                 const nombreNuevo = prompt('Ingrese el nombre del nuevo contacto:');
                 const telefonoNuevo = prompt('Ingrese el teléfono del nuevo contacto:');
                 const nuevoContacto = new Contacto(nombreNuevo, telefonoNuevo);
-                agenda.anadirContacto(nuevoContacto);
+                agenda.añadirContacto(nuevoContacto);
                 break;
             case '2':
                 const nombreExiste = prompt('Ingrese el nombre del contacto a verificar:');
@@ -134,4 +134,4 @@ function main() {
     } while (opcion !== '0');
 }
 
-main();
+ejecutarAgenda();
