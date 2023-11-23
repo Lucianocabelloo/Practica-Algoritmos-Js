@@ -1,0 +1,11 @@
+#juego{
+  display: none;
+}
+
+.mostrar-seccion {
+    display: block;
+  }
+  
+  .ocultar-seccion {
+    display: none;
+  }
